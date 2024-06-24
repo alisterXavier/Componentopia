@@ -1,5 +1,5 @@
 {
-  "name": "typewriter_library",
+  "name": "componentopia",
   "version": "1.0.1",
   "description": "",
   "main": "dist/cjs/index.js",
@@ -11,7 +11,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/alisterXavier/typewriter_library.git"
+    "url": "https://github.com/alisterXavier/componentopia"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
