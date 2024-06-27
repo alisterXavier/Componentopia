@@ -67,7 +67,7 @@ export const Marquee = ({
             trigger: `.${parentClassName}`,
             scrub: 0.5,
             start: 0,
-            end: elem?.bottom,
+            end: `bottom bottom`,
             markers: true,
             onUpdate: (e) => (direction = e.direction * -1),
           },

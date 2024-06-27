@@ -29,7 +29,7 @@ export const StaggerText = ({
   delay,
 }: StaggerTextTypes) => {
   const ref = useRef<HTMLDivElement>(null);
-  
+
   useGSAP(() => {
     if (ref.current) {
       const splitText = new SplitType(ref.current);
@@ -55,6 +55,10 @@ export const StaggerText = ({
           stagger: {
             amount: staggerAmt,
           },
+          scrollTrigger: {
+            trigger: '.stagger',
+            start: '10% bottom',
+          },
           duration: duration,
           delay: delay ?? 0,
         }
@@ -65,7 +69,7 @@ export const StaggerText = ({
   return (
     <div>
       <p
-        className={``}
+        className={`stagger`}
         style={{
           color: styles.color,
           fontSize: `${styles.size}px`,
